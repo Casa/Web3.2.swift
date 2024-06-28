@@ -27,7 +27,7 @@ let package = Package(
         // Core dependencies
         .package(url: "https://github.com/attaswift/BigInt.git", from: "5.3.0"),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.6.0"),
-        .package(url: "https://github.com/BlockchainCommons/secp256k1-zkp.swift.git", from: "0.5.0"),
+        .package(url: "https://github.com/GigaBitcoin/secp256k1.swift.git", from: "0.5.0"),
         .package(url: "https://github.com/apple/swift-collections.git", .upToNextMajor(from: "1.0.3")),
         .package(url: "https://github.com/vapor/websocket-kit", .upToNextMajor(from: "2.6.1")),
 
@@ -44,7 +44,7 @@ let package = Package(
             dependencies: [
                 .product(name: "BigInt", package: "BigInt"),
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
-                .product(name: "secp256k1", package: "secp256k1-zkp.swift", moduleAliases: ["secp256k1": "secp256k1alias"]),
+                .product(name: "secp256k1", package: "secp256k1.swift", moduleAliases: ["secp256k1": "secp256k1alias"]),
                 .product(name: "Collections", package: "swift-collections"),
                 .product(name: "WebSocketKit", package: "websocket-kit"),
             ],
