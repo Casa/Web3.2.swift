@@ -44,7 +44,7 @@ let package = Package(
             dependencies: [
                 .product(name: "BigInt", package: "BigInt"),
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
-                .product(name: "secp256k1", package: "secp256k1.swift", moduleAliases: ["secp256k1": "secp256k1alias"]),
+                .product(name: "secp256k1", package: "secp256k1.swift", moduleAliases: ["secp256k1": "secp256k1_gigabitcoin"]),
                 .product(name: "Collections", package: "swift-collections"),
                 .product(name: "WebSocketKit", package: "websocket-kit"),
             ],
